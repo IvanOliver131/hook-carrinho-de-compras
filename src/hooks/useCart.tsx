@@ -32,6 +32,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
     return [];
   });
 
+  // Realizar a parte bonus ainda
 
   const addProduct = async (productId: number) => {
     try {
