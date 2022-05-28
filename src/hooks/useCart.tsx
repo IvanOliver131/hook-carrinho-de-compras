@@ -75,7 +75,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
     try {
       const updatedCart = [...cart];
       const productExists = updatedCart.find((product) => product.id === productId);
-      let newUpdatedCart: any = [];
+      let newUpdatedCart: Product[] = [];
 
       if (productExists) {
         newUpdatedCart = updatedCart.filter((product) => product.id !== productId);
